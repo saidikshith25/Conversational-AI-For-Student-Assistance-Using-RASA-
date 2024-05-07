@@ -1,0 +1,311 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: student details
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: student_details
+  - action: utter_student_details
+
+- story: branch courses
+  steps:
+  - intent: branch_courses
+  - action: utter_branch_courses
+
+- story: cse department
+  steps:
+  - intent: cse_department
+  - action: utter_cse_department
+
+- story: ece department
+  steps:
+  - intent: ece_department
+  - action: utter_ece_department
+
+- story: eee department
+  steps:
+  - intent: eee_department
+  - action: utter_eee_department
+
+- story: me department
+  steps:
+  - intent: me_department
+  - action: utter_me_department
+
+- story: ce department
+  steps:
+  - intent: ce_department
+  - action: utter_ce_department
+
+- story: clg events
+  steps:
+  - intent: clg_events
+  - action: utter_clg_events
+
+- story: placement drive
+  steps:
+  - intent: placement_drive
+  - action: utter_placement_drive
+
+- story: A section
+  steps:
+  - intent: A_section
+  - action: utter_A_section
+
+- story: B section
+  steps:
+  - intent: B_section
+  - action: utter_B_section
+
+- story: C section
+  steps:
+  - intent: C_section
+  - action: utter_C_section
+
+- story: D section
+  steps:
+  - intent: D_section
+  - action: utter_D_section
+
+- story: E section
+  steps:
+  - intent: E_section
+  - action: utter_E_section
+
+- story: F section
+  steps:
+  - intent: F_section
+  - action: utter_F_section
+
+- story: G section
+  steps:
+  - intent: G_section
+  - action: utter_G_section
+
+- story: semester holidays
+  steps:
+  - intent: semester_holidays
+  - action: utter_semester_holidays
+
+- story: january month
+  steps:
+  - intent: january_month
+  - action: utter_january_month
+- story: february month
+  steps:
+  - intent: february_month
+  - action: utter_february_month
+- story: march month
+  steps:
+  - intent: march_month
+  - action: utter_march_month
+- story: april month
+  steps:
+  - intent: april_month
+  - action: utter_april_month
+- story: may month
+  steps:
+  - intent: may_month
+  - action: utter_may_month
+- story: june month
+  steps:
+  - intent: june_month
+  - action: utter_june_month
+- story: july month
+  steps:
+  - intent: july_month
+  - action: utter_july_month
+- story: august month
+  steps:
+  - intent: august_month
+  - action: utter_august_month
+- story: september month
+  steps:
+  - intent: september_month
+  - action: utter_september_month
+- story: october month
+  steps:
+  - intent: october_month
+  - action: utter_october_month
+- story: november month
+  steps:
+  - intent: november_month
+  - action: utter_november_month
+- story: december month
+  steps:
+  - intent: december_month
+  - action: utter_december_month
+
+- story: 2103A51L01
+  steps:
+  - intent: 2103A51L01
+  - action: utter_2103A51L01
+- story: 2103A51L02
+  steps:
+  - intent: 2103A51L02
+  - action: utter_2103A51L02
+- story: 2103A51L03
+  steps:
+  - intent: 2103A51L03
+  - action: utter_2103A51L03
+- story: 2103A51L04
+  steps:
+  - intent: 2103A51L04
+  - action: utter_2103A51L04
+- story: 2103A51L05
+  steps:
+  - intent: 2103A51L05
+  - action: utter_2103A51L05
+- story: 2103A51L06
+  steps:
+  - intent: 2103A51L06
+  - action: utter_2103A51L06
+- story: 2103A51L07
+  steps:
+  - intent: 2103A51L07
+  - action: utter_2103A51L07
+- story: 2103A51L08
+  steps:
+  - intent: 2103A51L08
+  - action: utter_2103A51L08
+- story: 2103A51L09
+  steps:
+  - intent: 2103A51L09
+  - action: utter_2103A51L09
+- story: 2103A51L10
+  steps:
+  - intent: 2103A51L10
+  - action: utter_2103A51L10
+- story: 2103A51L11
+  steps:
+  - intent: 2103A51L11
+  - action: utter_2103A51L11
+- story: 2103A51L12
+  steps:
+  - intent: 2103A51L12
+  - action: utter_2103A51L12
+- story: 2103A51L13
+  steps:
+  - intent: 2103A51L13
+  - action: utter_2103A51L13
+- story: 2103A51L14
+  steps:
+  - intent: 2103A51L14
+  - action: utter_2103A51L14
+- story: 2103A51L15
+  steps:
+  - intent: 2103A51L15
+  - action: utter_2103A51L15
+- story: 2103A51L17
+  steps:
+  - intent: 2103A51L17
+  - action: utter_2103A51L17
+- story: 2103A51L18
+  steps:
+  - intent: 2103A51L18
+  - action: utter_2103A51L18
+- story: 2103A51L19
+  steps:
+  - intent: 2103A51L19
+  - action: utter_2103A51L19
+- story: 2103A51L20
+  steps:
+  - intent: 2103A51L20
+  - action: utter_2103A51L20
+- story: 2103A51L21
+  steps:
+  - intent: 2103A51L21
+  - action: utter_2103A51L21
+- story: 2103A51L22
+  steps:
+  - intent: 2103A51L22
+  - action: utter_2103A51L22
+- story: 2103A51L23
+  steps:
+  - intent: 2103A51L23
+  - action: utter_2103A51L23
+- story: 2103A51L24
+  steps:
+  - intent: 2103A51L24
+  - action: utter_2103A51L24
+- story: 2103A51L25
+  steps:
+  - intent: 2103A51L25
+  - action: utter_2103A51L25
+- story: 2103A51L26
+  steps:
+  - intent: 2103A51L26
+  - action: utter_2103A51L26
+- story: 2103A51L27
+  steps:
+  - intent: 2103A51L27
+  - action: utter_2103A51L27
+- story: 2103A51L28
+  steps:
+  - intent: 2103A51L28
+  - action: utter_2103A51L28
+- story: 2103A51L29
+  steps:
+  - intent: 2103A51L29
+  - action: utter_2103A51L29
+- story: 2103A51L30
+  steps:
+  - intent: 2103A51L30
+  - action: utter_2103A51L30
+- story: 2103A51L31
+  steps:
+  - intent: 2103A51L31
+  - action: utter_2103A51L31
+- story: 2103A51L32
+  steps:
+  - intent: 2103A51L32
+  - action: utter_2103A51L32
+- story: 2103A51L33
+  steps:
+  - intent: 2103A51L33
+  - action: utter_2103A51L33
+- story: 2103A51L34
+  steps:
+  - intent: 2103A51L34
+  - action: utter_2103A51L34
+- story: 2103A51L35
+  steps:
+  - intent: 2103A51L35
+  - action: utter_2103A51L35
+- story: 2103A51L36
+  steps:
+  - intent: 2103A51L36
+  - action: utter_2103A51L36
+- story: 2103A51L37
+  steps:
+  - intent: 2103A51L37
+  - action: utter_2103A51L37

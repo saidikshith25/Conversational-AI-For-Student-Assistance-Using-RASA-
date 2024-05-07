@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    /* CSS for body */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url('BG.png'); /* Background image for the entire page */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* CSS for login container */
+    .login-container {
+      background-image: url('ssssss.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f900;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    /* CSS for login input */
+    .login-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* CSS for login button */
+    .login-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* CSS for chat container */
+    .chat-container {
+      display: none; /* Initially hidden */
+      position: relative;
+      width: 380px;
+      height: 380px;
+      border: 2px solid #eda95a;
+      overflow-y: scroll;
+      padding: 10px;
+      background-color: rgb(177, 236, 236); /* Add a semi-transparent background color to make chat messages readable */
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    /* CSS for chat messages */
+    .chat-message {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #d4bcd8;
+    }
+
+    /* CSS for user input */
+    .user-input-container {
+      display: flex;
+      justify-content: flex-end; /* Align user input to the right */
+      margin-top: 10px;
+      background-color: #93e8ec
+    }
+
+    .user-input {
+      width: calc(100% - 20px); /* Adjust width to leave space for the send button */
+      padding: 5px;
+      margin-left: 0px; /* Add margin to the left for spacing */
+      background-color: #ddeac2; /* Light green for user input */
+    }
+
+    .send-button {
+      width: 60px; /* Set a fixed width for the send button */
+      padding: 10px;
+      background-color: #53ea58;
+      color: rgba(255, 255, 255, 0.977);
+      border: none;
+      cursor: pointer;
+    }
+
+    /* CSS for message button */
+    .message-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 60%;
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    /* CSS for close button */
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: transparent;
+      color: #555;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* CSS for title */
+    .chat-title {
+      font-weight: bolder;
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #290453; /* Highlight color */
+    }
+
+    /* CSS for clear button */
+    .clear-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #f50e1d; /* Danger color */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container" id="login-container">
+    <h2>Login</h2>
+    <input type="text" class="login-input" id="username" placeholder="Username">
+    <input type="password" class="login-input" id="password" placeholder="Password">
+    <button class="login-button" onclick="login()">Login</button>
+  </div>
+
+  <div class="chat-container" id="chat-container">
+    <button class="close-button" onclick="toggleChat()">✖️</button>
+    <button class="clear-button" onclick="clearChat()">Clear Chat</button> <!-- Clear Chat button -->
+    <div class="chat-title">Welcome to Conversational AI for Student Assistance Using RASA</div> <!-- Highlighted title -->
+    <div class="chat-message">Chat with us</div>
+    <div class="user-input-container">
+      <input type="text" class="user-input" id="user-input" placeholder="Type your message...">
+      <button class="send-button" onclick="sendMessage()">Send</button>
+    </div>
+    <button class="login-button" onclick="logout()">Logout</button> <!-- Logout button -->
+  </div>
+
+  <button class="message-button" onclick="toggleChat()">✉️</button>
+
+  <script>
+    let loggedIn = false; // Variable to track login status
+
+    function login() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Simple validation (replace with your own logic)
+      if (username === "admin" && password === "password") {
+        // If login is successful, set loggedIn to true
+        loggedIn = true;
+        // Show the chat container
+        document.getElementById("chat-container").style.display = "block";
+        document.getElementById("login-container").style.display = "none"; // Hide the login container
+        document.getElementById("user-input").focus(); // Focus on input when chat opens
+      } else {
+        alert("Invalid credentials. Please try again.");
+      }
+    }
+    
+    function toggleChat() {
+      var chatContainer = document.getElementById("chat-container");
+      var messageButton = document.querySelector(".message-button");
+
+      if (loggedIn) {
+        // Open chat only if user is logged in
+        if (chatContainer.style.display === "none") {
+          chatContainer.style.display = "block";
+          messageButton.textContent = "Close Chat";
+        } else {
+          chatContainer.style.display = "none";
+          document.getElementById("user-input").value = ""; // Clear input when chat closes
+          messageButton.textContent = "✉️";
+        }
+      } else {
+        alert("Please login first.");
+      }
+    }
+
+    // Logout function
+    function logout() {
+      loggedIn = false; // Set loggedIn to false
+      document.getElementById("login-container").style.display = "block";
+      document.getElementById("chat-container").style.display = "none";
+      document.getElementById("username").value = ""; // Clear username field
+      document.getElementById("password").value = ""; // Clear password field
+    }
+
+    // Function to send user message to Rasa server and receive response
+    function sendMessage() {
+      var userInput = document.getElementById("user-input").value;
+      var chatContainer = document.getElementById("chat-container");
+
+      if (userInput.trim() === "") return; // Don't send empty messages
+
+      // Display user message
+      var userMessage = document.createElement("div");
+      userMessage.className = "chat-message";
+      userMessage.textContent = "You: " + userInput;
+      userMessage.style.backgroundColor = "#cde0a4"; // Set background color for user message
+      chatContainer.appendChild(userMessage);
+      
+      // Clear user input field
+      document.getElementById("user-input").value = "";
+      
+      // Scroll to bottom of chat container
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+      
+      // Send user message to Rasa server
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "http://localhost:5005/webhooks/rest/webhook", true);
+      xhr.setRequestHeader("Content-Type", "application/json");
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var response = JSON.parse(xhr.responseText);
+          // Display bot response
+          var botResponse = document.createElement("div");
+          botResponse.className = "chat-message";
+          botResponse.textContent = "Bot: " + response[0].text;
+          chatContainer.appendChild(botResponse);
+          // Scroll to bottom of chat container
+          chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+      };
+      var data = JSON.stringify({"message": userInput});
+      xhr.send(data);
+    }
+
+    // Clear Chat function
+    function clearChat() {
+      var chatContainer = document.getElementById("chat-container");
+      var chatMessages = chatContainer.querySelectorAll(".chat-message");
+      chatMessages.forEach(function(message) {
+        message.remove();
+      });
+    }
+
+    // Listen for Enter key press on the input field
+    document.getElementById("user-input").addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault(); // Prevent default form submission behavior
+        sendMessage(); // Call sendMessage() when Enter key is pressed
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - student_details
+  - branch_courses
+  - cse_department
+  - ece_department
+  - eee_department
+  - me_department
+  - ce_department
+  - clg_events
+  - placement_drive
+  - A_section
+  - B_section
+  - C_section
+  - D_section
+  - E_section
+  - F_section
+  - G_section
+  - semester_holidays
+  - january_month
+  - february_month
+  - march_month
+  - april_month
+  - may_month
+  - june_month
+  - july_month
+  - august_month
+  - september_month
+  - october_month
+  - november_month
+  - december_month
+  - 2103A51L01
+  - 2103A51L02
+  - 2103A51L03
+  - 2103A51L04
+  - 2103A51L05
+  - 2103A51L06
+  - 2103A51L07
+  - 2103A51L08
+  - 2103A51L09
+  - 2103A51L10
+  - 2103A51L11
+  - 2103A51L12
+  - 2103A51L13
+  - 2103A51L14
+  - 2103A51L15
+  - 2103A51L17
+  - 2103A51L18
+  - 2103A51L19
+  - 2103A51L20
+  - 2103A51L21
+  - 2103A51L22
+  - 2103A51L23
+  - 2103A51L24
+  - 2103A51L25
+  - 2103A51L26
+  - 2103A51L27
+  - 2103A51L28
+  - 2103A51L29
+  - 2103A51L30
+  - 2103A51L31
+  - 2103A51L32
+  - 2103A51L33
+  - 2103A51L34
+  - 2103A51L35
+  - 2103A51L36
+  - 2103A51L37
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_student_details:
+  - text: "please enter your hall ticket number"
+
+  utter_branch_courses:
+  - text: "CSE (Computer Science and Engineering), \n
+           ECE (Electronics and Communication Engineering), \n
+           EEE (Electrical and Electronic Engineering), \n 
+           ME  (Mechanical Engineering), \n
+           CE  (Civil Engineering)"
+
+  utter_cse_department:
+  - text: "AI&ML(Artificial intelligence & machine learning),\n
+           DS(Data Science),\n
+           CS(Cyber Security),\n
+           CSE(Computer Science and Engineering)"
+
+  utter_ece_department:
+  - text: "ECE(Electronics and Communication Engineering),\n
+           AI&ML(Artificial intelligence & machine learning)
+           IOT(Internet of Things)"
+
+  utter_eee_department:
+  - text: "EEE(Electrical and Electronic Engineering),\n
+           AI&ML(Artificial intelligence & machine learning)"
+
+  utter_me_department:
+  - text: " ME(Mechanical Engineering)"
+
+  utter_ce_department:
+  - text: "CE(Civil Engineering)"
+  
+  utter_clg_events:
+  - text: "parent Orientation week,\n
+           Sports,\n
+           Farewell party,\n
+           Cultural Events,\n
+           Traditional day,\n
+           SRU MUN,\n
+           Sparkrill,\n
+           Graduation ceremonies"
+
+  utter_placement_drive:
+  - text: "which section would you like to see..?"
+
+  utter_A_section:
+  - text: "Muthumula Varshini,\n
+           Mohammad Hasifa,\n
+           Konur Sandeep,\n
+           Adupa Shashank,\n
+           Bakkashetty Vikranth,\n
+           Karthikeya Rama,\n
+           Dudimetla Varshith Yadav,\n
+           Yalla Krishnaveni,\n"
+
+  utter_B_section:
+  - text: "Kamishetty Varshith,\n
+           Aaleti Bharath,\n
+           Chippa Sharanya,\n
+           Lingam Chaitanya,\n
+           Varshitha Gajjela"
+
+  utter_C_section:
+  - text: "Darapu Srivasavi,\n
+           Banoth Suresh,\n
+           Kumba Bhargavi,\n
+           Spoorthi Gangasani,\n
+           Suram Sukrutha,\n
+           Bolukonda Vamshi"
+
+  utter_D_section:
+  - text: "Kudikala Karthik,\n
+           Rathi Karan,\n
+           Andapally Vaishnavi,\n
+           Alugunuri Saisharan,\n"
+
+  utter_E_section:
+  - text: "Alugu Nikhil,\n
+           Kandukuri Yeshwanth,\n
+           Marati SaiGanesh,\n"
+
+  utter_F_section:
+  - text: "Vemula Sreeja,\n
+           kunta Anirudh,\n
+           Tasleema Mohammad,\n
+           Sheshu Gandhasiri"
+
+  utter_G_section:
+  - text: " Nalla Abhishekam,\n
+            Nagabelli Sai Dikshith,\n
+            Saddi Manindhar Reddy,\n
+            Jannu Srujan,\n
+            Yerraboina Karthik"
+
+  utter_2103A51L01:
+  - text: "ADEPU ASHWITHA  \n Computer science and Engineering \n IV/II SEM\n G section \n Lateral entry "
+ 
+  utter_2103A51L02:
+  - text: "AKUTHOTA SRIKANTH  \n Discontinued "
+
+  utter_2103A51L03:
+  - text: "ARRABELLI JONA KARTHIK  \n Computer science and Engineering \n IV/II SEM\n G section \n Lateral entry "
+
+  utter_2103A51L04:
+  - text: "BATHINI AJAY  \n Computer science and Engineering \n IV/II SEM \n G section \n Lateral entry"
+
+  utter_2103A51L05:
+  - text: "BAYYA RAJU  \n Computer science and Engineering \n IV/II SEM\n G section \n Lateral entry "
+
+  utter_2103A51L06:
+  - text: "BODA SWARUPA  \n Computer science and Engineering \n IV/II SEM \n G section \n Lateral entry "
+
+  utter_2103A51L07:
+  - text: "DUBASI MUKESH  \n Computer science and Engineering \n IV/II SEM\n G section \n Lateral entry  "
+
+  utter_2103A51L08:
+  - text: "EGA DEEPAK  \n Computer science and Engineering \n IV/II SEM \n G section \n Lateral entry  "
+
+  utter_2103A51L09:
+  - text: "ERRABELLY SRIMANI  \n Computer science and Engineering \n IV/II SEM\n G section \n Lateral entry "
+
+  utter_2103A51L10:
+  - text: "GADDAM SHIVA KUMAR  \n Computer science and Engineering \n IV/II SEM \n G section \n Lateral entry "
+
+  utter_2103A51L11:
+  - text: "GANDAMALLA MANASA  \n Computer science and Engineering \n IV/II SEM\n G section \n Lateral entry  "
+
+  utter_2103A51L12:
+  - text: "IDULAPURAM SAI RAJESHWARA CHARY  \n Computer science and Engineering \n IV/II SEM \n G section \n Lateral entry  "
+
+  utter_2103A51L13:
+  - text: "IRUKULLA YASHWANTHINI \n Computer science and Engineering \n IV/II SEM\n G section \n  Lateral entry "
+
+  utter_2103A51L14:
+  - text: "JAKKOJU AKSHAY KUMAR \n Computer science and Engineering \n IV/II SEM \n G section \n Lateral entry  "
+
+  utter_2103A51L15:
+  - text: "JANNU SRUJAN \n Computer science and Engineering \n IV/II SEM\n G section \n Lateral entry  "
+
+  utter_2103A51L17:
+  - text: "KATTA ABHILASH  \n Computer science and Engineering \n IV/II SEM\n G section \n Lateral entry   "
+
+  utter_2103A51L18:
+  - text: "KOKKULA SIDDARTHA  \n Discontinued"
+
+  utter_2103A51L19:
+  - text: "KUSUMA NAVEEN  \n Computer science and Engineering \n IV/II SEM\n G section \n  Lateral entry   "
+
+  utter_2103A51L20:
+  - text: "MOHAMMAD SADIQ AHMED  \n Computer science and Engineering \n IV/II SEM \n G section \n  Lateral entry  "
+
+  utter_2103A51L21:
+  - text: "MOHAMMED ABDUL RAB  \n Computer science and Engineering \n IV/II SEM\n G section \n Lateral entry  "
+
+  utter_2103A51L22:
+  - text: "MOHAMMED NIZAMUDDIN  \n Computer science and Engineering \n IV/II SEM \n G section \n Lateral entry   "
+
+  utter_2103A51L23:
+  - text: "MUDDAM VYSHNAVI  \n Computer science and Engineering \n IV/II SEM\n G section \n  Lateral entry  "
+
+  utter_2103A51L24:
+  - text: "MULKA VYSHNAVI  \n Computer science and Engineering \n IV/II SEM \n G section \n  Lateral entry  "
+
+  utter_2103A51L25:
+  - text: "NAGABELLI SAI DIKSHITH  \n Computer science and Engineering \n IV/II SEM\n G section \n  Lateral entry "
+
+  utter_2103A51L26:
+  - text: "NALLA ABHISHEKAM  \n Computer science and Engineering \n IV/II SEM \n G section \n  Lateral entry  "
+
+  utter_2103A51L27:
+  - text: "NALLAKUNTA SATVIKA \n Computer science and Engineering \n IV/II SEM\n G section \n  Lateral entry "
+
+  utter_2103A51L28:
+  - text: "PAYIDI SAI SRINIVAS \n Computer science and Engineering \n IV/II SEM \n G section \n Lateral entry   "
+
+  utter_2103A51L29:
+  - text: "POONDRU ANUDEEP REDDY \n Computer science and Engineering \n IV/II SEM\n G section \n  Lateral entry  "
+
+  utter_2103A51L30:
+  - text: "REBELLY VYSHNAVI  \n Computer science and Engineering \n IV/II SEM \n G section \n Lateral entry   "
+
+  utter_2103A51L31:
+  - text: "RIKKULA RAJKUMAR  \n Computer science and Engineering \n IV/II SEM \n G section \n  Lateral entry  "
+
+  utter_2103A51L32:
+  - text: "THAVISI DINESH  \n Computer science and Engineering \n IV/II SEM\n G section \n Lateral entry   "
+
+  utter_2103A51L33:
+  - text: "sorry try to enter correct input..!  "
+
+  utter_2103A51L34:
+  - text: "VANGA SUSHMA SRI \n Computer science and Engineering \n IV/II SEM\n G section \n  Lateral entry "
+
+  utter_2103A51L35:
+  - text: "YERRABOINA KARTHIK \n Computer science and Engineering \n IV/II SEM \n G section \n  Lateral entry  "
+
+  utter_2103A51L36:
+  - text: "SADDI MANINDHAR REDDY \n Computer science and Engineering \n IV/II SEM\n G section \n Lateral entry   "
+
+  utter_2103A51L37:
+  - text: "PRADHYUMN REDDY  \n Computer science and Engineering \n IV/II SEM \n G section \n  Lateral entry  "
+
+  utter_semester_holidays:
+  - text: "which month holidays would you like to see" 
+
+  utter_january_month:
+  - text: "13-01-2024 Sat Weekend Break,\n
+           14-01-2024 Sun Weekend Break,\n
+           15-01-2024 Mon Sankranthi Holiday,\n
+           20-01-2024 sat Weekend Break,\n
+           21-01-2024 Sun Weekend Break,\n
+           26-01-2024 Fri Republic Day Holiday,\n
+           27-01-2024 Sat Weekend Break,\n
+           28-01-2024 Sun Weekend Break,\n"
+  
+  utter_february_month:
+  - text: "04-02-2024 Sun Weekend Break,\n
+           10-02-2024 Sat Weekend Break,\n
+           11-02-2024 Sun Weekend Break,\n
+           17-02-2024 Sat Weekend Break,\n
+           18-02-2024 Sun Weekend Break,\n
+           24-02-2024 Sat Weekend Break,\n
+           25-02-2024 Sun Weekend Break,\n"
+  
+  utter_march_month:
+  - text: "03-03-2024 Sun Weekend Break,\n
+           08-03-2024 Fri Maha Shivratri Holiday,\n
+           09-03-2024 sat Weekend Break,\n
+           10-03-2024 Sun Weekend Break,\n
+           16-03-2024 sat Convocation,\n
+           17-03-2024 Sun Weekend Break,\n
+           23-03-2024 sat Weekend Break,\n
+           24-03-2024 Sun Weekend Break,\n
+           25-03-2024 Mon Holi Holiday,\n
+           29-03-2024 Fri Good Friday Holiday,\n
+           30-03-2024 sat Weekend Break,\n
+           31-03-2024 Sun Weekend Break,\n"
+  
+  utter_april_month:
+  - text: "05-04-2024 Fri Babu Jagjivan Ram Holiday,\n
+           06-04-2024 sat Weekend Break,\n
+           07-04-2024 Sun Weekend Break,\n
+           09-04-2024 Tues Ugadi Holiday,\n
+           10-04-2024 Wednes Id Ul Fitr Holiday,\n
+           14-04-2024 Sun Weekend Break,\n
+           17-04-2024 Wednes Srirama Navami Holiday,\n
+           21-04-2024 Sun Weekend Break,\n
+           27-04-2024 sat Weekend Break,\n
+           28-04-2024 Sun Weekend Break,\n"
+  
+  utter_may_month:
+  - text: "05-05-2024 Sun Weekend Break,\n
+          11-05-2024 sat Weekend Break,\n
+          12-05-2024 Sun Weekend Break,\n
+          18-05-2024 sat Weekend Break,\n
+          19-05-2024 Sun Weekend Break,\n
+          25-05-2024 sat Weekend Break,\n
+          26-05-2024 Sun Weekend Break,\n"
+
+  utter_june_month:
+  - text: "02-06-2024 Sun Weekend Break,\n
+           08-06-2024 sat Weekend Break,\n
+           09-06-2024 Sun Weekend Break,\n
+           15-06-2024 sat Weekend Break,\n
+           16-06-2024 Sun Weekend Break,\n
+           17-06-2024 Mon Bakrid Holiday,\n
+           22-06-2024 sat Weekend Break,\n
+           23-06-2024 Sun Weekend Break,\n
+           29-06-2024 sat Weekend Break,\n
+           30-06-2024 Sun Weekend Break,\n"
+
+  utter_july_month:
+  - text: "07-07-2024 Sun Weekend Break,\n
+           13-07-2024 sat Weekend Break,\n
+           14-07-2024 Sun Weekend Break,\n
+           17-07-2024 Wednes Muharram Holiday,\n
+           20-07-2024 sat Weekend Break,\n
+           21-07-2024 Sun Weekend Break,\n
+           27-07-2024 sat Weekend Break,\n
+           28-07-2024 Sun Weekend Break,\n"
+  
+  utter_august_month:
+  - text: "circular not found"
+
+  utter_september_month:
+  - text: "circular not found"
+
+  utter_october_month:
+  - text: "circular not found"
+
+  utter_november_month:
+  - text: "circular not found"
+
+  utter_december_month:
+  - text: "circular not found"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

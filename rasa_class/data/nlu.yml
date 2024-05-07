@@ -1,0 +1,450 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: student_details
+  examples: 
+    -student details
+    -stud deta
+    -stu det
+    -i want to know about my student details profile
+    -please provide my student details profile
+    -show my student profile details 
+
+- intent: branch_courses
+  examples:
+    -what are the courses do we have
+    -show me courses
+    -i want college wise course
+    -list of courses
+    -course list
+    -how many courses
+    -courses
+
+- intent: cse_department
+  examples:
+    -what are specializations do we have in cse department computer science engineering depart
+    -specializations in cse computer science and engineering department
+    -sub branches incse computer science and engineering depart
+    -csedepartment
+    -cse branch
+    -cse CSE
+
+- intent: ece_department
+  examples:
+    -what are specializations do we have in ece department Electronics and Communication Engineering depart
+    -specializations in ece Electronics and Communication Engineering department
+    -sub branches inece Electronics and Communication Engineering depart
+    -ecedepartment
+    -ece branch
+    -ece ECE
+
+- intent: eee_department
+  examples:
+    -what are specializations do we have in eee department Electrical and Electronics Engineering depart
+    -specializations in eee Electrical and Electronics Engineering department
+    -sub branches ineee Electrical and Electronics Engineering depart
+    -eeedepartment
+    -eee branch
+    -eee EEE
+
+- intent: me_department
+  examples:
+    -what are specializations do we have in mech mechanical engineering depart
+    -specializations in mechanical Engineering mech mechanical engineering department
+    -sub branches in mechanical Engineering mech depart
+    -mechanicaldepartment
+    -mechanical
+    -mechanical engineering ME
+
+- intent: ce_department
+  examples:
+    -what are specializations do we have in civil engineering depart
+    -specializations in civil Engineering civl cvl engineering department
+    -sub branches in civil engineering civil depart
+    -civildepartment
+    -civldepartment
+    -cvldepartment
+    -CEdepartment
+    -civil engineering CE
+
+- intent: clg_events
+  examples:
+    -events we have
+    -upcoming events
+    -i need events list
+    -list of events in our college
+    -events list
+    -event list
+    -evnt lis
+    -evet list
+
+- intent: placement_drive
+  examples:
+    -how many got placed in campus
+    -how many placements we got 
+    -number of placements in the college campus
+    -names of students who got placement drive
+    -placements drive
+    -placements
+    -campus placements
+    -list of placement students 
+    -list of students who got job / jobs
+
+- intent: A_section
+  examples:
+    -A 
+    -a
+
+- intent: B_section
+  examples:
+    -B
+    -b
+
+- intent: C_section
+  examples:
+    -C
+    -c
+  
+- intent: D_section
+  examples:
+    -D
+    -d
+
+- intent: E_section
+  examples:
+    -E
+    -e
+
+- intent: F_section
+  examples:
+    -F
+    -f
+
+- intent: G_section
+  examples:
+    -G
+    -g
+
+- intent: semester_holidays
+  examples:
+    -semester holidays
+    -i need circular holidays in this semester
+
+- intent: january_month
+  examples:
+    -january
+    -jan
+    -first month
+    -1st month
+    -jan month
+- intent: february_month
+  examples:
+    -february
+    -feb
+    -secondmonth
+    -2ndmonth
+    -feb month
+- intent: march_month
+  examples:
+    -march
+    -mar
+    -third month
+    -3rd month
+    -mar month
+- intent: april_month
+  examples:
+    -april
+    -aprl
+    -fourth month
+    -4thmonth
+    -apr month
+    -aprl month
+- intent: may_month
+  examples:
+    -may
+    -fifth month
+    -5thmonth
+    -may month
+- intent: june_month
+  examples:
+    -june
+    -jun
+    -sixth month
+    -6th month
+    -june month
+- intent: july_month
+  examples:
+    -july
+    -jul
+    -seventh month
+    -7th month
+    -july month
+- intent: august_month
+  examples:
+    -august
+    -aug
+    -eighth month
+    -8th month
+    -august month
+- intent: september_month
+  examples:
+    -september
+    -sept
+    -ninth month
+    -9thmonth
+    -september month
+- intent: october_month
+  examples:
+    -october
+    -oct
+    -tenth month
+    -10th month
+    -october month
+- intent: november_month
+  examples:
+    -nov
+    -november
+    -eleventh month
+    -11thmonth
+    -november month
+- intent: december_month
+  examples:
+    -december
+    -dec
+    -twelveth month
+    -12th month
+    -december month
+
+- intent: 2103A51L01
+  examples:
+    -2103A51L01
+    -2103a51l01
+- intent: 2103A51L02
+  examples:
+    -2103A51L02
+    -2103a51l02
+- intent: 2103A51L03
+  examples:
+    -2103A51L03
+    -2103a51l03
+- intent: 2103A51L04
+  examples:
+    -2103A51L04
+    -2103a51l04
+- intent: 2103A51L05
+  examples:
+    -2103A51L05
+    -2103a51l05
+- intent: 2103A51L06
+  examples:
+    -2103A51L06
+    -2103a51l06
+- intent: 2103A51L07
+  examples:
+    -2103A51L07
+    -2103a51l07
+- intent: 2103A51L08
+  examples:
+    -2103A51L08
+    -2103a51l08
+- intent: 2103A51L09
+  examples:
+    -2103A51L09
+    -2103a51l09
+- intent: 2103A51L10
+  examples:
+    -2103A51L10
+    -2103a51l10
+- intent: 2103A51L11
+  examples:
+    -2103A51L11
+    -2103a51l11
+- intent: 2103A51L12
+  examples:
+    -2103A51L12
+    -2103a51l12
+- intent: 2103A51L13
+  examples:
+    -2103A51L13
+    -2103a51l13
+- intent: 2103A51L14
+  examples:
+    -2103A51L14
+    -2103a51l14
+- intent: 2103A51L15
+  examples:
+    -2103A51L15
+    -2103a51l15
+- intent: 2103A51L17
+  examples:
+    -2103A51L17
+    -2103a51l17
+- intent: 2103A51L18
+  examples:
+    -2103A51L18
+    -2103a51l18
+- intent: 2103A51L19
+  examples:
+    -2103A51L19
+    -2103a51l19
+- intent: 2103A51L20
+  examples:
+    -2103A51L20
+    -2103a51l20
+- intent: 2103A51L21
+  examples:
+    -2103A51L21
+    -2103a51l21
+- intent: 2103A51L22
+  examples:
+    -2103A51L22
+    -2103a51l22
+- intent: 2103A51L23
+  examples:
+    -2103A51L23
+    -2103a51l23
+- intent: 2103A51L24
+  examples:
+    -2103A51L24
+    -2103a51l24
+- intent: 2103A51L25
+  examples:
+    -2103A51L25
+    -2103a51l25
+- intent: 2103A51L26
+  examples:
+    -2103A51L26
+    -2103a51l26
+- intent: 2103A51L27
+  examples:
+    -2103A51L27
+    -2103a51l27
+- intent: 2103A51L28
+  examples:
+    -2103A51L28
+    -2103a51l28
+- intent: 2103A51L29
+  examples:
+    -2103A51L29
+    -2103a51l29
+- intent: 2103A51L30
+  examples:
+    -2103A51L30
+    -2103a51l30
+- intent: 2103A51L31
+  examples:
+    -2103A51L31
+    -2103a51l31
+- intent: 2103A51L32
+  examples:
+    -2103A51L32
+    -2103a51l32
+- intent: 2103A51L33
+  examples:
+    -2103A51L33
+    -2103a51l33
+- intent: 2103A51L34
+  examples:
+    -2103A51L34
+    -2103a51l34
+- intent: 2103A51L35
+  examples:
+    -2103A51L35
+    -2103a51l35
+- intent: 2103A51L36
+  examples:
+    -2103A51L36
+    -2103a51l36
+- intent: 2103A51L37
+  examples:
+    -2103A51L37
+    -2103a51l37
